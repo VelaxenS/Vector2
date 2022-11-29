@@ -19,6 +19,9 @@ public:
 	double angleB(vector2 vector);
 	vector2 addV(vector2 vector);
 	vector2 subtractV(vector2 vector);
+	vector2 perpendicular();
+	bool isEqual(vector2 vector);
+	void set(double nx, double ny);
 
 
 };

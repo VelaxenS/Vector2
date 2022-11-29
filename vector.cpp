@@ -50,3 +50,30 @@ double vector2::angleB(vector2 vector) {
 
 	return angle * 180/3.1415;
 }
+
+bool vector2::isEqual(vector2 vector) {
+
+	if (this->x == vector.x && this->y == vector.y) {
+
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
+vector2 vector2::perpendicular() {
+
+	vector2 newVect(y, -x);
+
+	return newVect;
+
+}
+
+void vector2::set(double nx, double ny) {
+
+	this->x = nx;
+	this->y = ny;
+
+}
+
