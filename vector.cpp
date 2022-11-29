@@ -50,6 +50,3 @@ double vector2::angleB(vector2 vector) {
 
 	return angle * 180/3.1415;
 }
-
-
-
