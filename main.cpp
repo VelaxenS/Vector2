@@ -11,8 +11,8 @@ int main() {
 
 	cout << "dot product is : " << vector_1.dotP(vector_2)<< endl;
 	cout << "angle between : " << vector_1.angleB(vector_2) << endl;
-	cout << (vector_1.addV(vector_2)).iComp << ", " << (vector_1.addV(vector_2)).jComp << endl;
-	cout << (vector_1.subtractV(vector_2)).iComp << ", " << (vector_1.subtractV(vector_2)).jComp << endl;
+	cout << (vector_1.addV(vector_2)).x << ", " << (vector_1.addV(vector_2)).y << endl;
+	cout << (vector_1.subtractV(vector_2)).x << ", " << (vector_1.subtractV(vector_2)).y << endl;
 
 	return 0;
 

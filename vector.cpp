@@ -4,15 +4,15 @@
 
 using namespace std;
 
-vector2::vector2(double x, double y) : iComp(x), jComp(y) {
+vector2::vector2(double x, double y) : x(x), y(y) {
 
 }
 
 
 vector2 vector2::addV(vector2 vector) {
 
-	double sumVectX = vector.iComp + iComp;
-	double sumVectY = vector.jComp + jComp;
+	double sumVectX = vector.x + x;
+	double sumVectY = vector.y + y;
 	vector2 newVect(sumVectX, sumVectY);
 
 	return newVect;
@@ -21,8 +21,8 @@ vector2 vector2::addV(vector2 vector) {
 
 vector2 vector2::subtractV(vector2 vector) {
 
-	double sumVectX = iComp - vector.iComp;
-	double sumVectY = jComp - vector.jComp;
+	double sumVectX = x - vector.x;
+	double sumVectY = y - vector.y;
 	vector2 newVect(sumVectX, sumVectY);
 
 	return newVect;
@@ -30,7 +30,7 @@ vector2 vector2::subtractV(vector2 vector) {
 
 double vector2::mag() {
 
-	double magnitude = sqrt(pow(iComp, 2) + pow(jComp, 2));
+	double magnitude = sqrt(pow(x, 2) + pow(y, 2));
 
 	return magnitude;
 
@@ -38,7 +38,7 @@ double vector2::mag() {
 
 double vector2::dotP(vector2 vector) {
 
-	double dotPVal = vector.iComp * iComp + vector.jComp * jComp;
+	double dotPVal = vector.x * x + vector.y * y;
 
 	return dotPVal;
 
