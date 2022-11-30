@@ -75,3 +75,10 @@ void vector2::set(double nx, double ny) {
 
 }
 
+vector2 vector2::multiply(vector2 v1, vector2 v2) {
+
+	vector2 newVect(v1.x * v2.x, v1.y * v2.y);
+
+	return newVect;
+}
+

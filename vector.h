@@ -22,9 +22,7 @@ public:
 	vector2 perpendicular();
 	bool isEqual(vector2 vector);
 	void set(double nx, double ny);
-
+	vector2 multiply(vector2 v1, vector2 v2);
 
 };
-
-
 #endif
