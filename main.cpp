@@ -39,7 +39,4 @@ int main() {
 	cout << vector_1.x << " ," << vector_1.y << endl;
 
 	return 0;
-
-
-
 }
