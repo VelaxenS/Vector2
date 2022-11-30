@@ -2,8 +2,6 @@
 #include "vector.h"
 
 
-using namespace std;
-
 vector2::vector2(double x, double y) : x(x), y(y) {
 
 }
