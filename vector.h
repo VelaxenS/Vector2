@@ -6,22 +6,27 @@ class vector2 {
 
 public:
 
-	vector2(double x, double y);
+	vector2(float x, float y);
 
-	double x;
-	double y;
-	double magnitude;
-	double dotPVal;
-	double angle;
+	float x;
+	float y;
 
-	double mag();
-	double dotP(vector2 vector);
-	double angleB(vector2 vector);
-	vector2 addV(vector2 vector);
-	vector2 subtractV(vector2 vector);
+	void addV(const vector2 &vector);
+
+	void subtractV(const vector2 &vector);
+
+	float mag();
+
+	float dotP(const vector2 &vector);
+
+	float angleB(vector2 vector);
+
 	vector2 perpendicular();
+
 	bool isEqual(vector2 vector);
-	void set(double nx, double ny);
+
+	void set(float nx, float ny);
+
 	vector2 multiply(vector2 v1, vector2 v2);
 
 };
