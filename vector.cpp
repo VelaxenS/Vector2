@@ -13,6 +13,7 @@ void vector2::addV(const vector2 &vector) {
 	this->y = this->y + vector.y;
 }
 
+
 void vector2::subtractV(const vector2 &vector) {
 
 	this->x = this->x - vector.y;
